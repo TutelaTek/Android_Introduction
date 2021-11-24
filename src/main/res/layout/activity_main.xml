@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max"
+        android:id="@+id/maxId"
+        android:inputType="phone" />
+
+
+    <EditText
+        android:layout_below="@+id/maxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Min"
+        android:id="@+id/minId"
+        android:inputType="phone" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150sp"
+        android:text="0"
+        android:textColor="#071785"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        android:id="@+id/textWelcome"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:padding="20sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWelcome"
+        android:layout_centerHorizontal="true"
+        android:text="button"
+        android:textColor="@color/white"
+        android:onClick="onHello"/>
+
+</RelativeLayout>
